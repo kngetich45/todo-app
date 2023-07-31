@@ -8,5 +8,5 @@
  
  2. Which parts did you spend the most time with? What did you find most difficult?
 
-    - Dragging and dropping to reorder items across all the filters.
+    - Dragging and dropping to reorder items across all the filters but was not difficult. 
 
