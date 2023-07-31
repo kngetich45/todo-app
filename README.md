@@ -5,9 +5,9 @@ This is a solution for a ToDo application using JavaScript and Vue.
 ## Table of contents
 
 - [Overview](#overview)
+  - [Links](#links)
   - [The challenge](#the-challenge)
   - [Evaluation Criteria](#evaluation-criteria)
-  - [Links](#links)
 - [Front-end Style Guide](#front-end-style-guide) 
   - [Layout](#layout)
   - [Colors](#colors)
@@ -16,6 +16,10 @@ This is a solution for a ToDo application using JavaScript and Vue.
    
 
 ## Overview
+
+### Links
+ 
+- Live Site URL: [GitHub Pages](https://kngetich45.github.io/todo-app/)
 
 ### The challenge
 
@@ -41,10 +45,6 @@ Users should be able to:
 - Maintainability: is it written in a clean, maintainable way?
 - Testing: is the system adequately tested?
 - Your deployed solution looks like the provided designs.
-
-### Links
- 
-- Live Site URL: [GitHub Pages](https://kngetich45.github.io/todo-app/)
 
 # Front-end Style Guide
 
@@ -95,10 +95,10 @@ The designs were created to the following widths:
 
 ### Screenshot
 
-![](./design/ACTIVE-STATES-DARK.jpg)
-![](./design/ACTIVE-STATES-LIGHT.jpg)
-![](./design/DESKTOP-DESIGN-DARK.jpg)
-![](./design/DESKTOP-DESIGN-LIGHT.jpg)
-![](./design/DESKTOP-PREVIEW.jpg)
-![](./design/MOBILE-DESIGN-DARK.jpg)
-![](./design/MOBILE-DESIGN-LIGHT.jpg)
+![](design/ACTIVE-STATES-DARK.jpg)
+![](design/ACTIVE-STATES-LIGHT.jpg)
+![](design/DESKTOP-DESIGN-DARK.jpg)
+![](design/DESKTOP-DESIGN-LIGHT.jpg)
+![](design/DESKTOP-PREVIEW.jpg)
+![](design/MOBILE-DESIGN-DARK.jpg)
+![](design/MOBILE-DESIGN-LIGHT.jpg)
