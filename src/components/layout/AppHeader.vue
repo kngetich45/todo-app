@@ -21,7 +21,7 @@ export default {
         </a>
         <button @click="toggleDarkMode" aria-label="Toggle night mode" class="w-6 md:w-8">
            
-          <img  src="../../assets/images/ICON-MOON.SVG" alt="moon" class="dark:hidden"/>
+          <img  src="../../assets/images/ICON-MOON.svg" alt="moon" class="dark:hidden"/>
           <img  src="../../assets/images/ICON-SUN.SVG" alt="sun" class="hidden dark:block"/>
 
         </button>

@@ -24,7 +24,7 @@ describe('AppHeader.vue', () => {
         const sunSVG = wrapper.find('[alt="sun"]');
 
          //Svg image location
-        const moonSvgURL = '/todo-app/src/assets/images/ICON-MOON.SVG'
+        const moonSvgURL = '/todo-app/src/assets/images/ICON-MOON.svg'
         const sunSvgURL = '/todo-app/src/assets/images/ICON-SUN.SVG'
     
         expect(moonSVG.exists()).toBe(true);  
