@@ -1,6 +1,8 @@
 import { describe,it,expect } from "vitest"; 
- import { mount } from '@vue/test-utils';
+ import { mount,shallowMount } from '@vue/test-utils';
 import AppHeader from '../components/layout/AppHeader.vue'
+import MoonIcon from '../assets/icons/Moon.vue'
+import SunIcon from '../assets/icons/Moon.vue'
  
 describe('AppHeader.vue', () => {
     it('should emit toggleDarkMode when the button is clicked', async () => {
@@ -18,21 +20,33 @@ describe('AppHeader.vue', () => {
       });
 
 
-    it('To test if image URL path is valid', () => {
-        const wrapper = mount(AppHeader); 
+    it('To test if image compoment is valid', () => {
+        const wrapper = shallowMount(AppHeader); 
         const moonSVG = wrapper.find('[alt="moon"]');
         const sunSVG = wrapper.find('[alt="sun"]');
-
-         //Svg image location
-        const moonSvgURL = '/todo-app/src/assets/images/ICON-MOON.svg'
-        const sunSvgURL = '/todo-app/src/assets/images/ICON-SUN.SVG'
-    
-        expect(moonSVG.exists()).toBe(true);  
-        expect(moonSVG.attributes('src')).toBe(moonSvgURL);
-    
-        expect(sunSVG.exists()).toBe(true);  
-        expect(sunSVG.attributes('src')).toBe(sunSvgURL);
-    })
   
+        expect(moonSVG.exists()).toBe(true);  
+        expect(sunSVG.exists()).toBe(true);   
+    });
+
+
+    it('Should render moon svg compoment correctly', () => {
+      const wrapper = mount(MoonIcon);
+      expect(wrapper.exists()).toBe(true); 
+      expect(wrapper.find('svg').attributes('width')).toBe('26');
+      expect(wrapper.find('svg').attributes('height')).toBe('26'); 
+      expect(wrapper.find('path').attributes('fill')).toBe('#FFF');
+
+    });
+  
+    it('Should render sun svg compoment correctly', () => {
+   
+      const wrapper = mount(SunIcon);
+      expect(wrapper.exists()).toBe(true); 
+      expect(wrapper.find('svg').attributes('width')).toBe('26');
+      expect(wrapper.find('svg').attributes('height')).toBe('26'); 
+      expect(wrapper.find('path').attributes('fill')).toBe('#FFF');
+
+    }); 
    
   });

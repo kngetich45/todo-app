@@ -1,7 +1,13 @@
 <script>   
 import { store } from '/src/store/index.js'
+import CrossIcon from  '../assets/icons/Cross.vue';
+import CheckIcon from  '../assets/icons/Check.vue';
 
 export default { 
+  components: {
+    CrossIcon,
+    CheckIcon
+  },
   props: {
     todo: Object,
     index: Number,
@@ -87,7 +93,7 @@ export default {
           class="flex aspect-square w-full items-center justify-center rounded-full bg-white dark:bg-dt-very-dark-desaturated-blue"
           :class="{ 'bg-opacity-0 dark:bg-opacity-0': isCompleted }"
         > 
-         <img  src="../assets/images/ICON-CHECK.SVG" class="w-2 md:w-3" :class="{ 'block': isCompleted, 'hidden': !isCompleted }"/>
+         <CheckIcon class="w-2 md:w-3" :class="{ 'block': isCompleted, 'hidden': !isCompleted }"/>
         </span>
       </label>
 
@@ -108,7 +114,7 @@ export default {
       class="w-3 md:w-4 xl:hidden xl:group-hover:block"
       :class="{ 'pointer-events-none': store.isDragging }"
     > 
-      <img  src="../assets/images/ICON-CROSS.SVG"/>
+      <CrossIcon/>
     </button>
   </div>
 </template>

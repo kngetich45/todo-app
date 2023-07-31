@@ -1,5 +1,14 @@
+
 <script> 
+
+import SunIcon from '../../assets/icons/Sun.vue';
+import MoonIcon from '../../assets/icons/Moon.vue';
+
 export default { 
+  components: {
+    SunIcon,
+    MoonIcon
+  },
   emits: ['toggleDarkMode'],
   methods: {
     toggleDarkMode() {
@@ -21,8 +30,8 @@ export default {
         </a>
         <button @click="toggleDarkMode" aria-label="Toggle night mode" class="w-6 md:w-8">
            
-          <img  src="../../assets/images/ICON-MOON.svg" alt="moon" class="dark:hidden"/>
-          <img  src="../../assets/images/ICON-SUN.SVG" alt="sun" class="hidden dark:block"/>
+          <MoonIcon alt="moon" class="dark:hidden"/>
+          <SunIcon alt="sun" class="hidden dark:block"/> 
 
         </button>
       </div>
